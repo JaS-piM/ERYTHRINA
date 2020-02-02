@@ -94,16 +94,16 @@ list-style: none;
     line-height: 1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
-    font-size: 300px;
+    font-size: 250px;
     font-weight: bolder;
     /* color: transparent; */
-    color: bisque;
+    color: clear;
     background-clip: text;
     -webkit-background-clip: text;
     background-repeat: no-repeat;
     background-size: cover;
     transform: scale(0.85, 1.1);
-    background-image: url(../rensyuu/img/deigo2.png);
+    background-image: url(../rensyuu/img/deigo.png);
   }
 
 
