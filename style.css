@@ -1,0 +1,339 @@
+/* ここからheader */
+header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
+.header-right>a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.header-right>a>img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.header-right>a>span{
+  color: rgb(223, 67, 61);
+  align-self: center;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+#nav {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-weight: bold;
+list-style: none;
+  }
+
+#nav li {
+  margin-bottom: 0.8em;
+  overflow: hidden;
+  height: 1em;
+  line-height: 1;
+  position: relative;
+}
+
+
+
+
+/* くるっと */
+#nav {
+  margin-left: 20px;
+  font-size: 100%;
+  font-weight: bold;
+  list-style: none;
+}
+#nav li {
+  margin-bottom: 0.8em;
+  overflow: hidden;
+  height: 1em;
+  line-height: 1;
+  position: relative;
+  width: 6em;
+}
+#nav li a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  position: absolute;
+}
+#nav li span {
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  white-space: nowrap;
+}
+#nav li span a {
+  color: rgb(223, 67, 61);
+}
+
+
+
+/* mainvisual */
+.block{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.txt{
+    line-height: 1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 300px;
+    font-weight: bolder;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(0.85, 1.1);
+    background-image: url(../rensyuu/img/deigo2.png);
+  }
+
+
+
+
+
+/* ここからカーテン */
+.fixed-bg {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+ 
+.bg01 {
+  background-image: url(./img/DSC08782_Original.jpg);
+}
+ 
+.bg02 {
+  background-image: url(./img/top2.png);
+}
+
+.bg-color01 {
+  background-color: black;
+  height: 100vh;
+  color: rgb(223, 67, 61);
+}
+
+
+/* ここからaboutus */
+.aboutus > h2 {
+  font-size: 100px;
+  font-weight: bolder;
+  /* color: rgb(223, 67, 61); */
+  padding: 70px 0 0 50px;
+}
+
+.deigo {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.flag {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+
+
+
+/* ここからfollowus */
+.followus {
+  background-color: rgb(223, 67, 61);
+  height: 100vh;
+}
+
+.followus>h2 {
+  font-size: 100px;
+  font-weight: bolder;
+  /* color: rgb(223, 67, 61); */
+  padding: 70px 0 0 50px;
+}
+
+.followIcon>li>a>img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.followIcon {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.shake:hover {
+  display: inline-block;
+  animation: hurueru .3s  infinite;
+}
+
+@keyframes hurueru {
+  0% {transform: translate(0px, 0px) rotateZ(0deg)}
+  25% {transform: translate(8px, 8px) rotateZ(1deg)}
+  50% {transform: translate(0px, 8px) rotateZ(0deg)}
+  75% {transform: translate(8px, 0px) rotateZ(-1deg)}
+  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+
+
+/* ここからpertner */
+.pertner {
+  background: url(./img/pertner_1.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  /* z-index: 0; */
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* .pertner:before{
+  content: '';
+  background: inherit;
+  /* -webkit-filter: blur(5px); */
+  /* -moz-filter: blur(5px); */
+  /* -o-filter: blur(5px); */
+  /* -ms-filter: blur(5px); */
+  /* filter: blur(1.5px); */
+  /* position: absolute; */
+  /* top: -1.5px; */
+  /* left: -1.5px; */
+  /* right: -1.5px; */
+  /* bottom: -1.5px; */
+  /* z-index: -1; */
+/* }  */
+
+/* .pertnermask {
+  height: 100%;
+  /* background: rgba(223,67,61,0.5); */
+  /* background: rgba(223,67,61,0.2); */
+/* }  */
+
+.pertner h2 {
+  font-size: 100px;
+  font-weight: bolder;
+  /* color: rgb(223, 67, 61); */
+  padding: 70px 0 0 50px;
+}
+
+.partnerlink>li>a>img {
+  height: 100px;
+  width: 300px;
+  border: solid 1px rgb(223, 67, 61);
+}
+
+.pertner>.pertnermask>ul {
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.pertner>.pertnermask>ul>li {
+  align-self: flex-end;
+}
+
+
+
+/* ここからfooter */
+
+footer{
+  display: flex;
+  align-items: center;/*上下*/
+  justify-content: center;/*左右*/
+  height: 80px;
+  background-color: black;
+}
+
+footer>p{
+  font-size: 15px;
+  text-align: center;
+  color: rgb(223, 67, 61);
+}
+
+
+
+
+/* ここからpageTop */
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#pageTop>a{
+  display: block;
+  z-index: 999;
+  /* padding: 8px 0 0 8px; */
+  /* width: 35px; */
+  /* height: 35px; */
+  text-decoration: none;
+  text-align: center;
+}
+
+#pageTop>a>img {
+  /* width: 60px; */
+  height: 50px;
+  line-height: 70px;
+  border-radius: 50%;
+}
+
+
+#pageTop>a>span {
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  margin:0;
+  padding:0;
+  margin-left: -14px;
+  margin-top: -12px;
+}
+
+#pageTop a:hover {
+  text-decoration: none;
+  animation: roll 0.7s linear infinite;
+}
+
+@keyframes roll {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
