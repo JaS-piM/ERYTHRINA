@@ -96,7 +96,8 @@ list-style: none;
     letter-spacing: 0.1em;
     font-size: 300px;
     font-weight: bolder;
-    color: transparent;
+    /* color: transparent; */
+    color: bisque;
     background-clip: text;
     -webkit-background-clip: text;
     background-repeat: no-repeat;
